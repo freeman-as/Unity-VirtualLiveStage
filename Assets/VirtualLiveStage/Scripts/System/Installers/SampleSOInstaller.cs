@@ -11,6 +11,8 @@ namespace VLS {
 
         public override void InstallBindings()
         {
+            Debug.Log("SampleSOInstaller run");
+
             Container.BindInstance(_sampleSO).AsCached();
         }
     }

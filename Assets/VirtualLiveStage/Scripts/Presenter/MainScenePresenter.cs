@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainScenePresenter : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+using UniRx;
 
-    // Update is called once per frame
-    void Update()
+using VLS.Model;
+using VLS.View;
+
+namespace VLS.Presenter
+{
+    public class MainScenePresenter
     {
-        
+        private readonly MainSceneModel _mainSceneModel;
+
+        public MainScenePresenter(
+            MainSceneModel mainSceneModel
+            )
+        {
+            Debug.Log("MainScenePresenter is constructed");
+
+            _mainSceneModel = mainSceneModel;
+        }
+
     }
 }

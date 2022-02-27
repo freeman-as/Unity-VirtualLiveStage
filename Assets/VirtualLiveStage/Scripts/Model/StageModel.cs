@@ -4,14 +4,12 @@ using UnityEngine;
 
 using UniRx;
 
-using VLS.Presenter;
-
 namespace VLS.Model
 {
     public class StageModel
     {
-        private readonly IReactiveProperty<float> _cubeScake = new ReactiveProperty<float>();
-        public IReadOnlyReactiveProperty<float> CubeScale => _cubeScake;
+        private readonly IReactiveProperty<float> _cubeScale = new ReactiveProperty<float>();
+        public IReadOnlyReactiveProperty<float> CubeScale => _cubeScale;
         public StageModel()
         {
             Debug.Log("StageModel is constructed");
@@ -19,8 +17,8 @@ namespace VLS.Model
 
         public void UpdateScale(float scale)
         {
-            if (_cubeScake.Value == scale) return;
-            _cubeScake.Value = scale;
+            if (_cubeScale.Value == scale) return;
+            _cubeScale.Value = scale;
         }
     }
 }
