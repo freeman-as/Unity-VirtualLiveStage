@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1bbbf66320a76418916615e8a387b5, type: 3}
+  m_Name: SampleSOInstaller
+  m_EditorClassIdentifier: 
+  _sampleSO: {fileID: 11400000, guid: 32313637ab75a3243a8ed472a2c5fb34, type: 2}
